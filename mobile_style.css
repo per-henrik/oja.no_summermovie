@@ -1,0 +1,170 @@
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  /** START Header **/
+  header dt{
+    font-size:0.2em;
+    font-family: 'Noto Sans', sans-serif;
+  }
+  /** END Header **/
+
+  /** START sections **/
+  section#innledning {
+    grid-template-columns:repeat(1, 1fr);
+    display:grid;
+    margin: 10% 0;
+  }
+
+  section#innledning h1{
+    grid-column: 1 / span 1;
+  }
+  section#innledning quote{
+    display:block;
+  }
+  section#innledning p {
+    grid-column: 1;
+  }
+  /*==================================================*/
+  section#tjenester {
+    grid-template-columns:repeat(1, 1fr);
+    margin:0 3%;
+    display:grid;
+    text-align:center;
+  }
+  section#tjenester h1{
+    grid-column: 1 / span 2s;
+    margin:50% 0;
+    text-align:center;
+  }
+  section#tjenester p{
+    clear:both;
+  }
+  section#tjenester quote {
+    float:left;
+    height: 125px;
+    width: 125px;
+    line-height: 125px;
+    max-width: 100%;
+    background: #1d3c65;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    display: block;
+    color: #fff;
+    font-size: 55px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    margin: 0 auto 50px;
+    text-shadow: 0px 0px 50px rgba(255, 255, 255, 0.7),0px 0px 40px rgba(255, 255, 255, 0.8),0px 0px 1px rgba(255, 255, 255, 0.9);
+  }
+  section#tjenester h2 {
+    line-height: 75px;
+    height:75px;
+    margin:25px 0 0 30px;
+    background-color:#1d3c65;
+    color:white;
+    border-radius:47.5px;
+    text-align:left;
+    padding-right:5%;
+    font-family: 'Noto Sans', sans-serif;
+    font-size:15px;
+    letter-spacing:2px;
+    white-space: nowrap;
+  }
+  section#tjenester h2:after {
+    border: none;
+  }
+  section#tjenester section {
+    margin-top:20%;
+  }
+  /*==================================================*/
+  section#slagord h1{
+    font-size:10  0%;
+    text-align:center;
+  }
+  /*==================================================*/
+  section#teknologi {
+    margin:20% 10%;
+    text-align: center;
+    display:block;
+  }
+  section#teknologi h1{
+    font-family: 'Noto Sans', sans-serif;
+    font-size:3em;
+    text-transform:uppercase;
+  }
+  section#teknologi section {
+    margin-bottom:10%;
+  }
+  section#teknologi div.gradline{
+    margin: 0px 0 100px;
+    height: 1px;
+    background-color: tomato;
+    background:
+      -webkit-gradient(
+        linear,
+        0 0,
+        100% 0,
+        from(white),
+        to(white),
+        color-stop(50%, tomato)
+      );
+  }
+  /** END sections **/
+
+  /** START Header **/
+  header dt{
+    font-size:1em;
+  }
+  /** END Header **/
+
+  /** START Menu **/
+  nav {
+  }
+  menuitem a {
+    border-radius: 0;
+    line-height: 2.4em;
+    display:block;
+  }
+  menuitem a:active {
+    background-color: tomato;
+  }
+
+  menu {
+    text-align: center;
+  }
+  /** END Menu **/
+
+  /** START footer **/
+  footer {
+    background-color: #1d3c65;
+    grid-template-columns:repeat(3, 1fr);
+    padding:2% 0% 5%;
+    margin-top:20%;
+    display:grid;
+    text-align: center;
+    white-space: nowrap;
+  }
+  footer section {
+    grid-column: auto / span 1;
+    background-color: white;
+    padding:40% 0%;
+    margin:0 1%;
+  }
+  footer quote:before {
+    font-size:300%;
+    color:tomato;
+  }
+  footer h2 {
+    font-family: 'Noto Sans', sans-serif;
+  }
+  footer p {
+    font-size:80%;
+  }
+  footer a {
+    color:black;
+    text-decoration:none;
+  }
+  /** END footer **/
+}
