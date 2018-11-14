@@ -1,16 +1,3 @@
-/** VIDEO overlay **/
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index:-1;
-}
-#contentwrapper {
-  z-index:2;
-}
-
 /** START generic elements **/
 * {margin:0;padding:0;}
 body {
