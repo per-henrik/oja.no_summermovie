@@ -5,6 +5,7 @@ body {
   font-family: 'Noto Serif', serif;
   min-height: 100vh;
   font-size:110%;
+  back
 }
 em {
   font-style:normal;
@@ -26,6 +27,7 @@ section#innledning {
 section#innledning h1{
   grid-column: 2 / span 1;
   text-align:center;
+  color: black;
 }
 section#innledning h1 quote:before {
   font-size:200%;
@@ -144,13 +146,16 @@ header {
   background-size: 100% auto;
   background-repeat:no-repeat;
   background-position: bottom;
-  text-shadow: 2px 2px 4px #000000;
-  color:white;
+  color:olivedrab;
 
 }
 header dt{
   font-size:2.2em;
   font-family: 'Noto Sans', sans-serif;
+}
+
+header dd {
+  font-style:italic;
 }
 /** END Header **/
 
